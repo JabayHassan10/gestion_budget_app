@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interface App Gestion de Budget</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="top">
+        <div class="Heading">App Gestion de Budget</div>
+        <div class="budget-value"></div>
+        <div class="budget-it">
+           Budget
+           <div class="budget-income-value"></div>
+           <input type="number">
+        </div>
+        <div class="budget-et">
+           Dépense
+           <div class="budget-expense-value"></div>
+           <input type="number">
+        </div>
+        <div class="budget-sd">
+            Solde
+            <div class="budget-solde-value"></div>
+            <input type="number">
+            <h3 class="c-sd">Budget - Dépense = Solde</h3>
+         </div>
+         <div class="middle">
+            <div class="et-list">Listes des Dépenses</div>
+            <input class="et-btn" type="submit" value="Ajouter Dépense">
+         </div>
+         <div class="bottom-et">
+            <table border="1px">
+                <thead>
+                    <tr>
+                        <th>Titre</th>
+                        <th>Montant</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Nourriture</td>
+                        <td><input type="number" name="Enter amount here" id="new-value"></td>
+                        <td><input type="button" value="Modifier">|<input type="button" value="Supprimer"></td>
+                    </tr>
+                    <tr>
+                        <td>Café</td>
+                        <td><input type="number" name="Enter amount here" id="new-value"></td>
+                        <td><input type="button" value="Modifier">|<input type="button" value="Supprimer"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div>
+                <div class="it-list">Liste des Revenus</div>
+                <input class="it-btn" type="submit" value="Ajouter Revenu">
+            </div>
+            <div class="bottom-it">
+                <table border="1px">
+                    <thead>
+                        <tr>
+                            <th>Titre</th>
+                            <th>Montant</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Salaire</td>
+                            <td><input type="number" name="Enter amount here" id="new-value"></td>
+                            <td><input type="button" value="Modifier">|<input type="button" value="Supprimer"></td>
+                        </tr>
+                        <tr>
+                            <td>Bonus</td>
+                            <td><input type="number" name="Enter amount here" id="new-value"></td>
+                            <td><input type="button" value="Modifier">|<input type="button" value="Supprimer"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+         </div>
+    </div>
+</body>
+</html>
